@@ -1,0 +1,109 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.navbar{
+    
+    background-color: red;
+    height: 70px;
+    width: 100%;
+    border-radius: 10px;
+    position: fixed;
+    top: 0px;
+    
+}
+.navbar .logo{
+    color: white;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: start;
+    margin-left: 80px;
+}
+.navbar .logo span{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+/*----------*/
+
+.content{
+    height: 100vh;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    margin-top: 70px;
+}
+
+.content .sidebar{
+    height: 100%;
+    width: 24%;
+    background-color: grey;
+    border-radius: 10px;
+    position: fixed;
+
+}
+
+.content .dishes{
+    height: 100%;
+    width: 76%;
+    background-color: yellow;
+    border-radius: 10px;
+    margin-left: 24%
+}
+
+/*--------------*/
+
+.content .sidebar .inside_sidebar{
+    height: 50px;
+    width: 100%;
+    background-color: grey;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.content .sidebar .inside_sidebar span{
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*----------------*/
+
+.content .dishes .popular{
+    height: 250px;
+    width: 100%;
+    background-color: pink;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content .items{
+    height: 200px;
+    width: 190px;
+    background-color:grey;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.content .dishes .others{
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dishes h1{
+    text-align: start;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
