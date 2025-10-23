@@ -30,6 +30,25 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
 }
+
+.navbar .generatebill{
+    margin-right: 80px;
+    float: right;
+    line-height: 70px;
+    margin-top: -4px;
+}
+.navbar .generatebill button{
+    height: 44px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    
+}
 /*----------*/
 
 .content{
@@ -92,6 +111,42 @@ body{
     font-size: 20px;
 }
 
+.total{
+    height: 50px;
+    width: 75%;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius : 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total .tot{
+    height:35px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 7px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: orange;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: -2px;
+}
+.total .afterbill{
+    height:35px;
+    width: 70px;
+    margin-right: 40px;
+    margin-top: 7px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(206, 142, 23);
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: -2px;
+}
 
 /*----------------*/
 

@@ -3,19 +3,10 @@ let info=document.querySelector('.info');
 let infoinside=document.querySelector('.infoinside');
 let bill=document.querySelector('.bill');
 info.style.display='none';
+let total=document.querySelector('.total');
+let genbill=document.querySelector('.genbill');
+let afterbill=document.querySelector('.afterbill');
 
-// let samosa={
-//     name:'Samosa',
-//     price:20,
-//     calories:100
-// }
-
-// for(let i=0;i<itm.length;i++){
-//     itm[i].addEventListener('click',function(){
-//         info.style.display='block';
-        
-//     })
-// }
 
 let samosa={
     name:'Samosa',
@@ -34,18 +25,18 @@ let idli={
 
 let pulav={
     name:'Pulav',
-    price:40,
+    price:45,
     calories:300,
     ratings: 4
 }
 
 let burger={
     name:'Burger',
-    price:50,
+    price:40,
     calories:400,
     ratings: 4
 }
-// map DOM ids to objects
+
 const menu = {
     samosa: samosa,
     idli: idli,
@@ -54,7 +45,7 @@ const menu = {
 };
 
 for(let i=0;i<itm.length;i++){
-    itm[i].addEventListener('click', function(){
+    itm[i].addEventListener('mouseover', function(){
         info.style.display='block';
         const key = this.id ;
         infoinside.innerText = `  ${menu[key].name}\n\nPrice ₹${menu[key].price} \n\nCalories ${menu[key].calories} cal \n\nRatings ${menu[key].ratings}/5`;
@@ -65,9 +56,10 @@ for(let i=0;i<itm.length;i++){
 let ul=document.querySelector('ul');
 
 
-
+let billtotal=0;
 for(let i=0;i<itm.length;i++){
     itm[i].addEventListener('click',function(){
+        billtotal+=menu[this.id].price;
         let li=document.createElement('li');
         let delbtn=document.createElement('button');
         delbtn.style.backgroundColor='red';
@@ -78,6 +70,7 @@ for(let i=0;i<itm.length;i++){
         const key = this.id ;
         delbtn.innerText='Remove';
         delbtn.addEventListener('click',function(){
+            billtotal-=menu[key].price;
             li.remove();
         })
 
@@ -99,3 +92,8 @@ for(let i=0;i<itm.length;i++){
 
     })
 }
+
+
+genbill.addEventListener('click',function(){
+    afterbill.innerText=billtotal;
+})
