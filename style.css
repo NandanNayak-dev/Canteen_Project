@@ -66,16 +66,33 @@ body{
     border-radius: 10px;
     margin: 20px;
     border: 2px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-align: start;
+    font-size: 20px;
+}
+.infoinside{
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 40px;
+    background-color:blue;
 }
 
+
+
 .content .sidebar .bill{
-    height: 250px;
+    height: 300px;
     width: 75%;
     background-color: green;
     border-radius: 10px;
     margin: 20px;
     border: 2px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-align: start;
+    font-size: 20px;
 }
+
+
 /*----------------*/
 
 .content .dishes .popular{
