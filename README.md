@@ -1,1 +1,1 @@
-# Canteen_Project
+# Canteen_Project (HTML CSS JS)

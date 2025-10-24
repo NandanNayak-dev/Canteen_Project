@@ -132,7 +132,6 @@ const menu = {
     coldcoffee:coldcoffee,
     tea:tea,
     limesoda:limesoda
-
 };
 
 for(let i=0;i<itm.length;i++){
@@ -184,8 +183,6 @@ for(let i=0;i<itm.length;i++){
 
     })
 }
-
-
 
 genbill.addEventListener('click',function(){
     afterbill.innerHTML='₹'+billtotal;
