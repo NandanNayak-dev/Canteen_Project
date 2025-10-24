@@ -4,6 +4,7 @@ let infoinside=document.querySelector('.infoinside');
 let bill=document.querySelector('.bill');
 info.style.display='none';
 let total=document.querySelector('.total');
+total.style.display='none';
 let genbill=document.querySelector('.genbill');
 let afterbill=document.querySelector('.afterbill');
 
@@ -37,11 +38,101 @@ let burger={
     ratings: 4
 }
 
+let pizza={
+    name:'Pizza',
+    price:50,
+    calories:500,
+    ratings: 4.5
+}
+
+let paneer={
+    name:'Paneer',
+    price:55,
+    calories:550,
+    ratings: 4.7
+}
+
+let chapathi={
+    name:'Chapathi',
+    price:35,
+    calories:350,
+    ratings: 4.6
+}
+
+let friedrice={
+    name:'Fried Rice',
+    price:45,
+    calories:650,
+    ratings: 4.9
+}   
+
+let gobi={
+    name:'Gobi',
+    price:50,
+    calories:700,
+    ratings: 4.8
+}
+
+
+let noodles={
+    name:'Noodles',
+    price:60,
+    calories:600,
+    ratings: 4.8
+}
+
+let panipuri={
+    name:'Panipuri',
+    price:40,
+    calories:750,
+    ratings: 4.9
+}
+
+let poori={
+    name:'Poori',
+    price:50,
+    calories:800,
+    ratings: 4.8
+}
+
+let coldcoffee={
+    name:'Cold Coffee',
+    price:30,
+    calories:900,
+    ratings: 4.9
+}
+
+let tea={
+    name:'Tea',
+    price:15,
+    calories:700,
+    ratings: 4.8
+}
+
+let limesoda={
+    name:'Lime Soda',
+    price:50,
+    calories:800,
+    ratings: 4.9
+}
+
 const menu = {
     samosa: samosa,
     idli: idli,
     pulav: pulav,
-    burger:burger
+    burger:burger,
+    pizza:pizza,
+    paneer:paneer,
+    chapathi:chapathi,
+    friedrice:friedrice,
+    gobi:gobi,
+    noodles:noodles,
+    panipuri:panipuri,
+    poori:poori,
+    coldcoffee:coldcoffee,
+    tea:tea,
+    limesoda:limesoda
+
 };
 
 for(let i=0;i<itm.length;i++){
@@ -59,6 +150,7 @@ let ul=document.querySelector('ul');
 let billtotal=0;
 for(let i=0;i<itm.length;i++){
     itm[i].addEventListener('click',function(){
+        total.style.display='flex';
         billtotal+=menu[this.id].price;
         let li=document.createElement('li');
         let delbtn=document.createElement('button');
@@ -94,6 +186,7 @@ for(let i=0;i<itm.length;i++){
 }
 
 
+
 genbill.addEventListener('click',function(){
-    afterbill.innerText=billtotal;
+    afterbill.innerHTML='₹'+billtotal;
 })
